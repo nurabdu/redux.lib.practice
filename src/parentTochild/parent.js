@@ -9,7 +9,8 @@ export const Parent = () => {
         setText(event.target.value)
     }
     return(
-        <div>
+        <div className='parent'>
+            <h3>from Parent Component</h3>
             <input type='text' placeholder='enter text' onChange={handler}/>
             <Child text={text}/>
         </div>
